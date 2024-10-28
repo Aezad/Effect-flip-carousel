@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-swiper">
+        <div class="swiper mySwiper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/pexels-googledeepmind-17483906.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/pexels-googledeepmind-17483907.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/pexels-googledeepmind-17483908.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/pexels-googledeepmind-17483910.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "flip",
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
